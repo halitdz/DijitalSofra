@@ -18,4 +18,4 @@ qr.make(fit=True)
 img = qr.make_image(fill='black', back_color='white')
 
 
-img.save("local_ip_3001_qr.png")
+img.save("qr.png")
