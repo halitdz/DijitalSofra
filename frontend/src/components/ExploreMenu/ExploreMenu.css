@@ -1,0 +1,24 @@
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explore-menu h2 {
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.explore-menu button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-menu button:hover {
+  background-color: var(--primary-dark);
+}

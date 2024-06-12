@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mydb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "4321:5432"
+
+volumes:
+  postgres_data:
+
+  # backend:
+  #   container_name: yummy-backend
+  #   build: ./backend
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     DB_HOST: postgres
+  #     DB_PORT: 5432
+  #     DB_USER: postgres
+  #     DB_PASSWORD: postgres
+  #     DB_NAME: mydb
+  #     JWT_SECRET: your_secret_key
+  #   ports:
+  #     - "8080:8080"
+  #   volumes:
+  #     - ./backend:/app
+    
+
+#   frontend:
+#     container_name: yummy-frontend
+#     build:
+#       context: ./frontend
+#       dockerfile: Dockerfile
+#     ports:
+#       - "3000:3000"
+#     depends_on:
+#       - backend
+#     networks:
+#       - yummy-net
+#   ngnix:
+#     container_name: yummy-nginx
+#     image: nginx:latest
+#     ports:
+#       - "80:80"
+#       - "443:443"
+#     volumes:
+#       - ./nginx:/etc/nginx/conf.d
+#     networks:
+#       - yummy-net
+# volumes:
+#   postgres_data:
+
+# networks:
+#   yummy-net:
+#     driver: bridge

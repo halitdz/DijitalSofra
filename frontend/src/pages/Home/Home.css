@@ -1,0 +1,32 @@
+/* Home.css */
+
+.container {
+    max-width: 1200px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortala */
+    padding: 20px; /* Dış boşluk */
+  }
+  
+  /* Bu kısımlar bileşenlerinizi özelleştirmek için */
+  /* Örneğin: Header bileşeni için */
+  .header {
+    background-color: #f2f2f2; /* Arka plan rengi */
+    padding: 20px; /* İç boşluk */
+    text-align: center; /* Metni ortala */
+    border-bottom: 1px solid #ccc; /* Alt kenarlık */
+  }
+  
+  /* ExploreMenu bileşeni için */
+  .explore-menu {
+    margin-top: 20px; /* Üst boşluk */
+  }
+  
+  /* FoodDisplay bileşeni için */
+  .food-display {
+    margin-top: 20px; /* Üst boşluk */
+  }
+  
+  /* AppDownload bileşeni için */
+  .app-download {
+    margin-top: 20px; /* Üst boşluk */
+    text-align: center; /* Metni ortal  a */
+  }
